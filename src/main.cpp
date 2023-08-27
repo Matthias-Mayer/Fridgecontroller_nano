@@ -86,7 +86,6 @@ void loop() {
     lcd.print(valV,2); lcd.print("  ");
     lcd.print(ntcTemp,1); lcd.print("  ");
     lcd.print(relaisStatus);
-    //lcd.print((String)cur+"  "+vol+"  "+power);
 
     // Debug values via serial communication
     if (debug) {
