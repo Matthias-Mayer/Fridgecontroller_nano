@@ -42,9 +42,10 @@ void setup() {
   lcd.clear();
   lcd.setCursor(7, 0);
   lcd.print("by");
-  lcd.setCursor(2, 1);
+  lcd.setCursor(1, 1);
   lcd.print("Matze aka Boss");
   delay(5000);  
+  lcd.clear();
 }
 
 void loop() {
