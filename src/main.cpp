@@ -98,8 +98,12 @@ void loop() {
     }
 
     // Workaround buggy display values
+    lcd_reset_counter += 1; // increase counter by 1
+
+    // Workaround buggy display values
     if (lcd_reset_counter > lcd_reset_limit) {
       lcd.noDisplay();
+      lcd.noBacklight();
       delay(3000);
       lcd.display();
       lcd.begin();
@@ -118,8 +122,6 @@ void loop() {
       lcd.clear();
       lcd_reset_counter = 0;
     }
-
-    lcd_reset_counter += 1; // increase counter by 1
   
   }// end if
 
