@@ -21,7 +21,7 @@ float t = 79.25;              // Temperature offset of liner regression of NTC v
 bool debug = true;            // True for debugging
 bool relaisstate = 0;         // State of the relais
 String relaisStatus = "OFF";  // State message relais
-int lcd_reset_limit = 3600;   // Time in sec to reset the lcd screen to avoid buggy display 
+int lcd_reset_limit = 36;   // Time in sec to reset the lcd screen to avoid buggy display 
 int lcd_reset_counter = 0;    // Time the lcd screen is on      
 
 // Set the LCD address to 0x27 for a 16 chars and 2 line display
@@ -107,7 +107,6 @@ void loop() {
       delay(3000);
       lcd.display();
       lcd.begin();
-      lcd.backlight();
       lcd.setCursor(5, 0);
       lcd.print("Fridge");
       lcd.setCursor(3, 1);
