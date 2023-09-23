@@ -16,12 +16,12 @@ float hystTemp = 2;           // Allowed tolerance band for the temperature +/-
 int numbMeasur = 100;         // Number of measurements for averaging adc values
 float vA0off = 0.0;           // Offset A0
 float vA0gain = 1.0;          // Gain for A0
-float m = -22.493;            // Gain of liner regression of NTC value
-float t = 79.25;              // Temperature offset of liner regression of NTC value
+float m = -16.675;            // Gain of liner regression of NTC value
+float t = 70.97;              // Temperature offset of liner regression of NTC value
 bool debug = true;            // True for debugging
 bool relaisstate = 0;         // State of the relais
 String relaisStatus = "OFF";  // State message relais
-int lcd_reset_limit = 36;   // Time in sec to reset the lcd screen to avoid buggy display 
+int lcd_reset_limit = 3600;   // Time in sec to reset the lcd screen to avoid buggy display 
 int lcd_reset_counter = 0;    // Time the lcd screen is on      
 
 // Set the LCD address to 0x27 for a 16 chars and 2 line display
